@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<div class="panel-body">
+                     <table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100% " border="1">
+                          <thead>
+                             <tr>
+                                <th>ID</th>
+                                <th>Headline</th>
+                                <th>Article </th>
+                                <th>source</th>
+                                 <th style="text-align: left">Action</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                             {% for each in data %}
+
+                                 <tr >
+                                    <td style="text-align: center">{{each.id}}</td>
+                                    <td style="text-align: center">{{each.headline}}</td>
+                                    <td style="text-align: center">{{each.article}}</td>
+                                     <td style="text-align: center">{{each.source}}</td>
+                                     <td>
+                                         <form action="" method="post">
+                                                {% csrf_token %}
+                                            <input type="submit" value="View">
+                                                </form>
+        </td>
+
+                                 </tr>
+
+                              {% endfor %}
+
+                          </tbody>
+                       <hr>
+                       </table>
+                    </div>
+</body>
+</html>
