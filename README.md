@@ -35,3 +35,13 @@ Here is how to run the code:
 <br>
 10.Run the server using the command:
     -> python manage.py runserver
+
+
+
+# Languages and frameworks
+ - Python
+ - Django, DRF
+ - HTML, CSS, JS
+
+# Tool
+ - pycharm or vscode
