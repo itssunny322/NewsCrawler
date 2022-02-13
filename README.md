@@ -1,5 +1,10 @@
 # NewsCrawler
 
+It's a very basic new crawler application ,where the script will crawl through
+the news website times of india everyday at morning 9am, and store the headline
+the date of headline and other info in our database , whenever you want you can 
+retrive the headline , used cronjobs for job scheduler as well.
+
 Here is how to run the code:
 <br>
 1.Create directory named assesment using command:   mkdir assigment 
